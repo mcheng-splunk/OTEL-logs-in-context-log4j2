@@ -15,7 +15,7 @@ The result is JSON structured logs, with one JSON object per line, which have th
   "timestamp": "2021-05-19T15:51:16.063-05:00",
   "thread.name": "http-nio-8080-exec-1",
   "log.level": "INFO",
-  "logger.name": "com.newrelic.app.Controller",
+  "logger.name": "org.springframework.web.servlet.DispatcherServlet"",
   "message": "A sample log message!",
   "trace_id": "6aae93314fe034149cd85f07eac24bc5",
   "span_id": "f1be31bc6e4471d8"

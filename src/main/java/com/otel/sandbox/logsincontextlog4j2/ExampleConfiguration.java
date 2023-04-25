@@ -39,7 +39,7 @@ class ExampleConfiguration {
               "message": "span: SpanData{spanContext=ImmutableSpanContext{traceId=0d6952a505f68fb8b2e11aae4a4f3f78, spanId=dbed50962bad9023, traceFlags=01, traceState=ArrayBasedTraceState{entries=[]}, remote=false, valid=true}, parentSpanContext=ImmutableSpanContext{traceId=00000000000000000000000000000000, spanId=0000000000000000, traceFlags=00, traceState=ArrayBasedTraceState{entries=[]}, remote=false, valid=false}, resource=Resource{schemaUrl=null, attributes={service.name=\"unknown_service:java\", telemetry.sdk.language=\"java\", telemetry.sdk.name=\"opentelemetry\", telemetry.sdk.version=\"1.19.0\"}}, instrumentationScopeInfo=InstrumentationScopeInfo{name=com.otel.sandbox.logsincontextlog4j2.LogsInContextLog4j2Application, version=null, schemaUrl=null, attributes={}}, name=/ping, kind=SERVER, startEpochNanos=1673594961756398000, endEpochNanos=1673594961830829117, attributes=AttributesMap{data={net.host.name=localhost:8080, http.target=/ping, http.method=GET, http.scheme=http}, capacity=128, totalAddedValues=4}, totalAttributeCount=4, events=[], totalRecordedEvents=0, links=[], totalRecordedLinks=0, status=ImmutableStatusData{statusCode=UNSET, description=}, hasEnded=true}",
               "service.name": "logs-in-context"
             }*/
-//            .addSpanProcessor(SimpleSpanProcessor.create(new LoggingSpanExporter()))
+            .addSpanProcessor(SimpleSpanProcessor.create(new LoggingSpanExporter()))
             .build();
 
     OpenTelemetrySdk sdk =
